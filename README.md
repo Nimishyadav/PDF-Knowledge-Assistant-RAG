@@ -1,6 +1,6 @@
 # Local PDF Knowledge Assistant (RAG)
 
-A basic retrieval-augmented chatbot using MiniLM embeddings, FAISS retrieval and local Ollama answers. This is a simple document RAG, without GraphRAG, agents or OCR. The separate `New folder` project is unchanged.
+A local RAG application for answering questions about PDF and text documents using Streamlit, FAISS, MiniLM embeddings, and Ollama. This is a simple document RAG, without GraphRAG, agents or OCR.
 
 ## Run (PowerShell)
 
@@ -38,5 +38,3 @@ python -m unittest discover -s tests -v
 
 
 CUDA troubleshooting: The app defaults to CPU inference (num_gpu=0), avoiding the GPU runner. CPU can be slower. Uncheck 'Use CPU' in the sidebar to try GPU; CUDA failures automatically retry once on CPU. Context is set to 4096 tokens and responses to at most 512 generated tokens.
-
-
